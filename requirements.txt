@@ -1,11 +1,9 @@
 --extra-index-url https://download.pytorch.org/whl/cu118
 
 torch==2.0.1+cu118
-torchvision==0.15.2+cu118
-torchaudio==2.0.2+cu118
-tensorflow==2.18.0
+tensorflow==2.16.1  # Updated for CUDA 11.8 compatibility
 numpy==1.26.4
-onnxruntime-gpu==1.16.3  # CUDA 11.8 compatible
+onnxruntime-gpu==1.16.3  # Explicit GPU version
 opencv-python==4.8.0.74
 insightface==0.7.3
 psutil==5.9.5
@@ -13,7 +11,7 @@ tk==0.1.0
 customtkinter==5.2.0
 tkinterdnd2==0.3.0; sys_platform != 'darwin' and platform_machine != 'arm64'
 pillow==10.0.0
-protobuf==4.25.2  # Required by TensorFlow 2.18
+protobuf==4.25.2  # Required by TensorFlow 2.16.1
 tqdm==4.65.0
 gfpgan==1.3.8
 opennsfw2
